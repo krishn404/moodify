@@ -1,0 +1,32 @@
+{
+  "name": "spotify-uncovered",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/server.js",
+  "engines":{
+    "node": "18.16.0"
+  },
+  "cacheDirectories" : [
+    "server/node_modules",
+    "client/node_modules"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/server.js",
+    "build": "NODE_ENV=production cd client/ && npm install && npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "connect-history-api-fallback": "^2.0.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
